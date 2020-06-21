@@ -1,0 +1,108 @@
+*{
+    margin:0px;
+    padding : 0px;
+}
+
+body{
+    background: linear-gradient(270deg , lightcyan, lightcoral);
+}
+h1{
+    text-align:center;
+    font-size:30px;
+    margin-top:20px;
+    margin-bottom:10px;
+    padding:2px;
+}
+.container{
+    margin:0px;
+    padding:10px;
+}
+nav{
+    margin:2px;
+    background: lightgrey;
+    margin:20px;
+    width:100%;
+    letter-spacing:0.2px;
+    padding:10px;
+    font-size: 20px;
+    font-style: oblique;
+    text-align: center;
+    visibility: hidden;
+    transition: 0.5s ease-in;
+}
+li{
+    text-decoration: none;
+}
+.bars{
+    margin:4px;
+    padding:10px;
+    border:2px;
+    width:60px;
+    z-index: 2px;
+    box-shadow: 5px 4px 3px 4px grey,
+                6px 4px 3px 2px black;
+    height: auto;
+    background:black;
+    color: white;
+    position: relative;
+    top:40%;
+    right:50%;
+    left:50%;
+    visibility: collapse;
+    transition: 0.2s ease;
+}
+.bars:hover{
+    background:peru;
+    color:green;
+}
+@media (max-width: 600px){
+    .bars{
+        visibility:visible ;
+    }
+    nav {
+        visibility: visible;
+        width:100%;
+        box-shadow: 4px 4px 2px 2px black,
+        4px 4px 4px 2px lightgrey;
+        z-index:-10px;
+    }
+    
+}
+ a{
+    text-decoration: none;
+    color:black;
+    padding:2px;
+
+}
+.nav-bar a:hover{
+    color:green;
+}
+
+.text{
+    font-size:18px;
+    font-weight: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border:2px solid gray;
+    text-align: center;
+    width:80%;
+    position: relative;
+    top:50%;
+    left:8%;
+}
+
+h2{
+    margin-bottom:2px;
+    font-size:22px;
+    line-height:0.1px;
+    text-align:center;
+}
+
+p{
+    font-size:18px;
+    margin:1px;
+    padding:10px;
+    opacity: 0.5;
+}
